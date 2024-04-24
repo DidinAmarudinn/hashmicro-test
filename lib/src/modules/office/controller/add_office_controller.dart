@@ -79,6 +79,7 @@ class AddOfficeController extends BaseController {
 
   void saveOffice() async {
     if (officeLocation.value == null) {
+      toastError(title: "Failed", message: "Please drag pin to select ofice location");
       return;
     }
     final office = OfficeLocationModel(
