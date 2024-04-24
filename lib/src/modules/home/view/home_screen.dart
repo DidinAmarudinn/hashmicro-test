@@ -139,7 +139,7 @@ class HomeScreen extends GetView<HomeController> {
                   )
                 ],
               )
-            : const SizedBox(),
+            :  CircularProgressIndicator(color: AppColors.primaryColor),
       ),
     );
   }
